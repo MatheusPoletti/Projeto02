@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    font-family: "Mulish", sans-serif;
+    background: linear-gradient(180deg, rgba(277, 255, 248, 0) 82.88%, rgba(277, 255, 248, 0.38) 100%); /* 180deg = 180graus, dps as cores, e a porcentagem da tela que vai aparecer*/
+    min-height: 100vh;
+}
+
+.page {
+    width: 1000px; /*Largura*/
+    margin: 0 auto ; /*Margem*/
+    padding-top: 65px;
+}
+
+nav {
+    justify-content: space-between;/* ele pegou a imagem e deixou num canto, e colocou a escrita do outro lado, lembrar de olhar no inspecionar*/
+    display: flex; /* Deixa o display um ao lado do outro na caixa, por exemplo nesse caso, a imagem e as escritas*/
+    align-items: center; /* deixa alinhado no eixo de algo, no nosso exemplo ele alinhou tudo no centro, apartir da imagem*/
+    margin-bottom: 55px;
+}
+
+
+ul {
+    list-style: none; /*Quando nos colocamos a <UL> LISTA ORDENADA, vem com uns pontinhos do lado da escrita, esse comando serve pra tirar*/
+    display: flex; /* Define que as coisas podem ficar umas dos lados da outra*/
+    gap: 48px; /*Define os espaçamentos dentre eles, nesse caso dos botoes de navegar, vai ter um espaço de 48px cada um dele, NOS LIMITES NAO TEM!*/
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #1F1534;
+    text-decoration: none; /* nesse caso serviu para tirar o sublinhado do link*/
+}
+
+ul li a {
+    opacity: 0.5; /* serve pra deixar mais opaco a escrita, 1 é preto absoluto e 0 e transparente*/
+}
+
+ul li a:hover { /* serve para quando passar o mouse em cima ficar em negrito*/
+    font-weight: bold;
+    opacity: 1;
+} 
+  
+
+section p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    color: #7D7987;
+    margin-bottom: 40px; /* definimos aqui pra deixar o espaçamento da escrita de cima e a escrita abaixo*/
+    margin-top: 40px;
+}
+
+h1 {
+    font-size: 49px;
+    line-height: 56px;
+    color: #1F1534;
+    font-weight: normal;
+    width: 490px;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+h1 span {
+    color: #89c5cc;
+    font-weight: bold;
+}
+
+button {
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase; /* transformando a escrita toda em maiscula*/
+    color: white;
+
+    background-color: #69B99D;
+    border: none;
+    padding: 14px 32px 15px;
+    border-radius: 4px; /*deixar a borda arredondada*/
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px; /*Para deixar espaçamento entre a logo e o nome*/
+    
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: #48987c;
+}
+
+footer {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height:28px;
+    text-align: center;
+}
+
+footer a {
+    font-weight: bold;
+    color: #1F1534;
+}
+
+
+#balls {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
